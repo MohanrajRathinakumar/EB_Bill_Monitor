@@ -33,6 +33,13 @@ public static PreSetup getInstance () {
 		}return inputExcelList;
 	}
 	
+//----------------------------------------------------------------------------------------------------------------------------------
+	public void oneTimeSetup() {
+		
+	}
+	
+//----------------------------------------------------------------------------------------------------------------------------------
+	
 	public void checkPreSetup() throws InvalidFormatException, IOException {
 		if(Base.driver==null) {
 			Base.driver = DriverAction.getInstance().getWebDriver();
